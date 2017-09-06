@@ -24,7 +24,7 @@ public class BillPaymentQuery {
 
 	private static final org.slf4j.Logger LOG = Logger.getLogger();
 		
-	public static void main(String[] args) {
+	public static void main_(String[] args) {
 		try {
 			queryBillPayments();
 		} catch (Exception e) {

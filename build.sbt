@@ -15,6 +15,6 @@ lazy val root = (project in file(".")).
     libraryDependencies += "com.intuit.quickbooks-online" % "oauth2-platform-api" % "3.0.0",
     libraryDependencies += "com.nrinaudo" %% "kantan.csv-scalaz" % "0.2.1",
     libraryDependencies += "com.nrinaudo" %% "kantan.csv-java8" % "0.2.1",
-    libraryDependencies += "com.nrinaudo" %% "kantan.csv-generic" % "0.2.1"
-    //libraryDependencies += "org.slf4j" % "slf4j-log4j12" % "1.7.21"
+    libraryDependencies += "com.nrinaudo" %% "kantan.csv-generic" % "0.2.1",
+    libraryDependencies += "com.github.tototoshi" %% "scala-csv" % "1.3.5"
   )

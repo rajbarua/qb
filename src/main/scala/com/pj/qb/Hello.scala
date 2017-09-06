@@ -7,6 +7,7 @@ import kantan.csv._
 import kantan.csv.ops._
 import kantan.csv.generic._
 import scala.io._
+import kantan.csv.engine._
 import kantan.csv.java8._
 import java.time.format.DateTimeFormatter
 import java.time.LocalDate
@@ -35,6 +36,7 @@ Year,Make,Model,Description,Price
 1996,Jeep,Grand Cherokee,"MUST SELL!
 air, moon roof, loaded",4799.00
 """
+  implicit val carDecoder: RowDecoder[Car] = RowDecoder.decoder(0, 1, 2, 3, 4)(Car.apply)
   val reader = rawData.asCsvReader[Car](rfc.withHeader)*/
   //reader.foreach(println _)
   
